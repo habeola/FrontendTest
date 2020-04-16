@@ -11,25 +11,28 @@
 <body>
     <div class="topnav">
         <h1>TransMonitor</h1>
-        <span class=""><a href="#"><i class="fa fa-search"></i></a>
+        <span id="search-wrap"><a href="#"><i class="fa fa-search"></i></a>
             <input type="text" placeholder="search" name="search"/>
         </span>
-        <div class=""><a href="">Support</a></div>
-        <div class=""><a href=""></a></div>
-        <span><a href="">
+        <div class="support"><a href="">Support</a></div>
+        <div class="faq"><a href="">FAQ</a></div>
+        <span id="notification"><a href="">
             <i class="fa fa-bell"></i><span id="badge">8</span></a>       
         </span>
-        <div class="">
-            <div>Hello</div>
-            <p>Oluwaleke Ojo</p>
+        <div class="username">
+            <div class="greeting">Hello
+            <p class="username">Oluwaleke Ojo</p>
+            </div>
         </div>
-        <img src="" alt="profile-pics">
+        <img src="img/ava2.jpg" alt="profile-pics">
     </div>
     <main>
         <div class="aside">
-            <div><a href="">Generate Invoice</a></div>
-            <div class="">Main</div> 
-            <div><i class="fas fa-envelope-open-text"></i>Overview</div>
+            <div class="invoice"><a href="">Generate Invoice</a></div>
+            <div class="main">Main</div> 
+            <div class="overview">
+                <p><i class="fas fa-envelope-open-text"></i>Overview</p>
+            </div>
             <h2>Payments</h2>
             <ul>
                 <li><a href="#"><i class="fas fa-box"></i>All Payments</a></li>
@@ -49,37 +52,35 @@
         </div>
         <div class="content">
             <div class="widget">
-                <div class="">
-                        <img src="">
-                        Daily Transaction Volume<br>2,342 
+                <div>
+                    <img src="img/vector.png">
+                    Daily Transaction Volume<br>2,342 
                 </div>   
-                <div class="">
-                    <img src="">
-                        Daily Transaction Value<br>#4,000                  
+                <div>
+                    <img src="img/vector.png">
+                    Daily Transaction Value<br>#4,000                  
                 </div>
-                <div class="">
-                    <img src="">
-                        Daily Transaction Volume 
-                        <br>425,000                     
+                <div>
+                    <img src="img/vector.png">
+                    Daily Transaction Volume <br>425,000                     
                 </div>
-                <div class="">
-                    <img src="">
-                        Daily Transaction Value
-                        <br>2,342
+                <div>
+                    <img src="img/vector.png">
+                    Daily Transaction Value<br>2,342
                 </div>
             </div>
             <div class="column">
-                <div class="">
-                    <div class="">
-                        <div class=""><b>Today: 5, Aug 2018</b></div>
-                            <div class="">
-                                <div class="">1 Jan - 1 Jun</div>
+                <div class="chart-box">
+                    <div class="wrap">
+                        <div class="date"><b>Today: 5, Aug 2018</b></div>
+                            <div class="mth">
+                                <div class="mth-diff">1 Jan - 1 Jun</div>
                             </div>
-                            <span><i class='fa fa-angle-left'></i></span>
-                            <span><i class='fa fa-angle-right'></i></span>
+                            <span id="left-pointer"><i class='fa fa-angle-left'></i></span>
+                            <span id="right-pointer"><i class='fa fa-angle-right'></i></span>
                     </div>
-                    <div class="">
-                        <div class="">
+                    <div class="chart-table">
+                        <div class="mth-list">
                             <div>Jan</div>
                             <div>Feb</div>
                             <div>Mar</div>
@@ -89,7 +90,7 @@
                         </div>
                         <div>
                         </div>
-                            <img src="">
+                            <img src="img/gradient.jpg">
                         </div> 
                 </div>
                 <div class="summary">
@@ -109,13 +110,13 @@
                     </ul>
                 </div>
             </div>
-            <h2 class="heading2">Payments</h2>
+            <h2 class="title">Payments</h2>
             <div class="label-wrap">
-                <div class="">Showing</div>
-                    <div class="">20 <span><i class="fa fa-angle-down"></i></span></div>
-                    <div class="">Out of 500 Payments</div>
-                    <div class="">
-                        <span class=""><i class="fa fa-search"></i></span>
+                <div class="col-1">Showing</div>
+                    <div class="col-2">20 <span><i class="fa fa-angle-down"></i></span></div>
+                    <div class="col-3">Out of 500 Payments</div>
+                    <div class="search-wrap">
+                        <span class="search-icon"><i class="fa fa-search"></i></span>
                         <input type="text" class="search-panel" placeholder="search payments"/>
                     </div>
                 <div class="show">Show</div>
@@ -139,94 +140,94 @@
                         <th></th>
                     </tr>
                     <tr>
-                        <td><img src="" ></td>
+                        <td id=col1><img src="img/vw.png" ></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Reconciled</span></td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>
+                        <td id="col5"><span class="em1"><span class="dot1"></span>Reconciled</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Pending</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>           
+                        <td id="col5"><span class="em2"><span class="dot2"></span>Pending</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>           
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Reconciled</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td> 
+                        <td id="col5"><span class="em1"><span class="dot1"></span>Reconciled</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td> 
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Reconciled</td>
-                        <td ><i class="fa fa-angle-down"></i></td>
+                        <td id="col5"><span class="em1"><span class="dot1"></span>Reconciled</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Pending</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>
+                        <td id="col5"><span class="em2"><span class="dot2"></span>Pending</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Unreconciled</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>
+                        <td id="col5"><span class="em3"><span class="dot3"></span>Unreconciled</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Reconciled</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>
+                        <td id="col5"><span class="em1"><span class="dot1"></span>Reconciled</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Unreconciled</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>
+                        <td id="col5"><span class="em3"><span class="dot3"></span>Unreconciled</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                     <tr>
-                        <td><img src=""></td>
+                        <td id=col1><img src="img/vw.png"></td>
                         <td >Apple Mac Book 15" 250 SSD 12GB</td>
                         <td>$73430</td>
                         <td>1234567890</td>
                         <td>12:30</td>
-                        <td>Pending</td>
-                        <td><span><i class="fa fa-angle-down"></i></span></td>
+                        <td id="col5"><span class="em2"><span class="dot2"></span>Pending</span></td>
+                        <td id="col6"><span id="down-pointer"><i class="fa fa-angle-down"></i></span></td>
                     </tr>
                 </table>
                 </div >
                 <div class="bottom-label">
-                    <div class=""> Showing 1 to 10 of 500 entries</div>
+                    <div class="showing"> Showing 1 to 10 of 500 entries</div>
                     <div class="pagination">
-                        <div class=""><a href="#">Previous</a></div>
-                        <div class="">1</div>
-                        <div class="">2</div>
-                        <div class=""><a href="#">Next</a></div>
+                        <div class="previous"><a href="#">Previous</a></div>
+                        <div class="one">1</div>
+                        <div class="two">2</div>
+                        <div class="next"><a href="#">Next</a></div>
                     </div>
                 </div>
             </div>
