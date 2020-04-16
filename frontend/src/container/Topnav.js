@@ -3,19 +3,19 @@ import ava2 from '../img/ava2.jpg';
 
 const Topnav = () => {
     return (
-        <div class="topnav">
+        <div className="topnav">
             <h1>TransMonitor</h1>
-            <span id="search-wrap"><a href="#"><i class="fa fa-search"></i></a>
+            <span id="search-wrap"><a href={undefined}><i className="fa fa-search"></i></a>
                 <input type="text" placeholder="search" name="search"/>
             </span>
-            <div class="support"><a href="">Support</a></div>
-            <div class="faq"><a href="">FAQ</a></div>
-            <span id="notification"><a href="">
-                <i class="fa fa-bell"></i><span id="badge">8</span></a>       
+            <div className="support"><a href={undefined}>Support</a></div>
+            <div className="faq"><a href={undefined}>FAQ</a></div>
+            <span id="notification"><a href={undefined}>
+                <i className="fa fa-bell"></i><span id="badge">8</span></a>       
             </span>
-            <div class="username">
-                <div class="greeting">Hello
-                <p class="username">Oluwaleke Ojo</p>
+            <div className="username">
+                <div className="greeting">Hello
+                <p className="username">Oluwaleke Ojo</p>
                 </div>
             </div>
             <img src={ava2} alt="profile-pics" />
